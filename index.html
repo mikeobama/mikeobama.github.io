@@ -1,0 +1,196 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Documentacion</title></head><body>
+<p><style>
+h1 {text-align: center;font-size:55px;margin-bottom:120%}
+body{font-size:}</p>
+<p></style></p>
+<h1>Zona de Clientes y Administración</h1>
+<p>Miguel García Bajo<br>2ª Desarrollo de Aplicaciones Web</p>
+<div style="page-break-after: always;"></div>
+
+<h2>Índice</h2>
+<ol>
+<li>Descripción en ingles <strong>Página 3</strong></li>
+<li>Lista de requisitos <strong>Página 4</strong></li>
+<li>Presupuesto <strong>Página 4</strong></li>
+<li>Planificación temporal con hitos <strong>Página 4</strong></li>
+<li>Pliego de condiciones <strong>Página 5</strong></li>
+<li>Documento de análisis y diseño <strong>Página 5</strong></li>
+<li>Documentación de instalación, configuración y desarrollo software <strong>Página 6</strong></li>
+<li>Documentación de usuario <strong>Página 6</strong></li>
+<li>Diario de bitácora <strong>Página 7</strong></li>
+<li>Bibliografía <strong>Página 8</strong></li>
+<li>Anexo 1: Contrato del proyecto</li>
+</ol>
+<div style="page-break-after: always;"></div>
+
+<h3>Descripción en ingles del objetivo del proyecto</h3>
+<p>The project is about an Administration Panel for the customer and a personalized area for their clients where they manage and check their data and revise their novelties and keep up to date.
+The target of the project is to create an easy and simple network between my client and his clients, which offers a fast access to the information and particularities of each work that my client can get.<br>The project has been developed using the framework Symfony and all its components.<br>I have designed the application to be able to be used by anyone without knowledges in computers and internet.<br>The main purpose has been to find uncomplicated possibilities to use this application in favour of the clients and his business.
+All the components have been tested and troubleshoot and all everything works according to what has been agreed with the customer.</p>
+<hr>
+<div style="page-break-after: always;"></div>
+
+<h3>Lista de Requisitos</h3>
+<ul>
+<li>Creación de un panel de administración para que la empresa pueda organizar sus actividades.</li>
+<li>Creación de una Zona de Cliente, donde el cliente pueda acceder a sus datos y modificarlos.</li>
+<li>Buen nivel de Seguridad</li>
+<li>Diseño con el Framework Symfony basado en php y twig.</li>
+<li>Diseño corporativo</li>
+</ul>
+<hr>
+<h3>Presupuesto</h3>
+<p>Desglose del Trabajo:  </p>
+<ul>
+<li>Diseño de la aplicación personalizada, incluyendo Base de Datos [60 horas]  </li>
+<li>Mantenimiento de la aplicación durante 3 meses [100 €]</li>
+<li>Coste aproximado de la hora de trabajo: 15€</li>
+<li>Libro de Symfony: 10€</li>
+<li>No ha hecho falta la adquisición de nuevo material, ni para el diseño ni para su ejecución.</li>
+</ul>
+<hr>
+<h3>Planificación Temporal</h3>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th align="center">Hito</th>
+<th align="right">Tiempo Aprox.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 Mayo</td>
+<td align="center">Estudiar Framework Symfony</td>
+<td align="right">5 días</td>
+</tr>
+<tr>
+<td>6 Mayo</td>
+<td align="center">Bocetos y planteamiento bbdd y estructura del proyecto</td>
+<td align="right">4 días</td>
+</tr>
+<tr>
+<td>10 Mayo</td>
+<td align="center">Aprender a usar y adquirir destreza con Symfony</td>
+<td align="right">5 días</td>
+</tr>
+<tr>
+<td>15 Mayo</td>
+<td align="center">Inserción de datos en la bbdd mediante fixtures</td>
+<td align="right">2 días</td>
+</tr>
+<tr>
+<td>17 Mayo</td>
+<td align="center">Desarrollar panel de administracion con SonataAdminBundle</td>
+<td align="right">5 días</td>
+</tr>
+<tr>
+<td>23 Mayo</td>
+<td align="center">Crear Zona de Clientes en base al UserBundle</td>
+<td align="right">3 días</td>
+</tr>
+<tr>
+<td>25 Mayo</td>
+<td align="center">Diseño y Css</td>
+<td align="right">3 días</td>
+</tr>
+<tr>
+<td>28 Mayo</td>
+<td align="center">Corrección de fallos y tests</td>
+<td align="right">2 días</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><div style="page-break-after: always;"></div></p>
+<h3>Pliego de Condiciones</h3>
+<ul>
+<li>Deberá estar operativa antes del 1 de Julio.</li>
+<li>Responsivo.</li>
+<li>Desarrollado según los estándares de Symfony(dentro de lo posible).</li>
+<li>No autorizada la re-utilización del código en otros proyectos ajenos a la empresa.</li>
+<li>Garantizar, según la ley de Protección de Datos de Carácter Personal, la confidencialidad de los datos personales aportados por el Cliente, la no aplicación o utilización de dichos datos
+para un fin distinto al del ámbito de la actividad suscrita en este contrato, y la no cesión de
+los datos a personas ajenas al cumplimiento de los acuerdos derivados de la prestación
+del servicio.</li>
+</ul>
+<hr>
+<h3>Análisis y diseño</h3>
+<p>He utilizado <strong>Bootstrap</strong> tanto por su diseño de los elementos, su sistema de celdas y por su facilidad de aplicar el diseño responsivo<br>El proyecto esta desarrollado bajo <strong>Symfony</strong> totalmente, usando bundles disponibles como Sonta admin para la parte de administracion de la aplicación, user bundle para manejar todo el funcionamiento de usuarios y creando mis propios bundles para organizar, manejar y modificar el proyecto.<br>Los Bundles creados por mi son: Clientes, Trabajos, Servicios, Frontend, Backend y Presupuestos. El más importante es ClientesBundle, que es donde gestiono todo desde el <strong>MVC</strong> que Symfony nos ofrece.<br>Symfony incluye la librería <strong>Doctrine</strong> como ORM (Object Relational Mapper) por defecto., que proporciona herramientas para simplificar el acceso y manejo de la información de la base de datos. Una característica importante de Doctrine es la posibilidad de escribir consultas de base de datos utilizando un dialecto de SQL denominado <strong>DQL</strong>, que facilita el use de joins.<br>Doctrine trabaja con entidades, que son la representación “orientada a objetos” de nuestras tablas.<br>Symfony provee un generador de Entidades para mapear la informacion de nuestras entidades he optado por usar anotaciones en vez de <strong>YAML</strong> o php directamente.<br>El driver que utiliza la bbdd es <strong>pdo_mysql</strong> y voy manejando una importación de ella a través de <strong>phpMyAdmin</strong> durante el procesa de creación.<br><strong>SonataAdminBundle</strong> crea la parte de administración de la aplicación. A partir de su diseño permite modificar y adaptar a lo que el cliente necesitaba.<br>El motor de Plantillas que emplea Symfony por defecto es <strong>Twig</strong>. Twig añade múltiples funcionalidades(de php) sobre el mismo html.<br>Symfony utiliza archivos YAML de configuración sencillos para trabajar.<br>He utilizado <strong>git</strong> como <strong>CVS</strong>, subiendo el código y mis commits con mi cuenta de github(<strong>mikeobama</strong>) a través del repositorio privado creado por mi cliente.<br>He seguido la línea de diseño que la empresa emplea en su página web, utilizando el verde <code>#9ABF1A</code> de su logo para decorar varios elementos html del codigo(botones, hovers...).</p>
+<p><div style="page-break-after: always;"></div></p>
+<h3>Instalación, Configuración y Desarrollo de Software</h3>
+<p>Para su ejecución en local debes seguir los siguientes pasos:</p>
+<pre><code class="lang-sh">cd /var/www/
+git clone https://github.com/sclaver/nuevatobe.git nuevatobe
+cd nuevatobe/
+composer install</code></pre>
+<p>El  <code>composer install</code> se encarga de instalar todo lo necesario para el funcionamiento del proyecto.<br>Existe una BBDD en los archivos, <strong>nuevatobe.sql</strong> con la configuración adecuada y ciertos datos para mostrar.<br>Configuramos los parametros de la BBDD, si vas a importar el .sql, el nombre de la Base de Datos es nuevatobe<br>Debes modificar los permisos siguientes(el último es opcional, si no cargas los datos no hace falta):</p>
+<pre><code>chmod 777 -R web/
+chmod 777 -R app/cache
+chmod 777 -R app/logs</code></pre>
+<p>Una vez que esta instalada la aplicación junto con la BBDD nos dirigimos a <code>http://localhost/nuevatobe/web/app_dev.php/login</code> y con la información suministrada puede loguearse tanto como Admin o como un Cliente, ya que hay varios perfiles de prueba.</p>
+<hr>
+<h3>Documentación de usuario</h3>
+<p>Una vez que el sistema se encuentre en funcionamiento y se empiece a crear usuarios y clientes, estos simplemente tendrán que acceder a su Zona a través de la web principal de <a href="http://www.tobesolutions.com">ToBeSolutions</a> con el nombre de usuario y contraseña que le sean asignados y una vez dentro de la zona podrán ver el estado de sus proyectos, facturas, archivos interesantes para el correcto funcionamiento de su web y acceder a sus datos y modificarlos si existiese algún cambio.</p>
+<hr>
+<p><div style="page-break-after: always;"></div></p>
+<h3>Diario de bitácora</h3>
+<table>
+<thead>
+<tr>
+<th>Fecha</th>
+<th align="center">Hito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6 Mayo</td>
+<td align="center">Fase Inicial de creación de Bundles y Entidades</td>
+</tr>
+<tr>
+<td>10 Mayo</td>
+<td align="center">Fixtures</td>
+</tr>
+<tr>
+<td>13 Mayo</td>
+<td align="center">SonataAdminBundle, instalación y desarrollo</td>
+</tr>
+<tr>
+<td>22 Mayo</td>
+<td align="center">UserBundle, instalación y desarrollo</td>
+</tr>
+<tr>
+<td>24 Mayo</td>
+<td align="center">Empezando a crear Zona de Clientes</td>
+</tr>
+<tr>
+<td>27 Mayo</td>
+<td align="center">Reestructuración de entidades y creación de nuevas</td>
+</tr>
+<tr>
+<td>3 Junio</td>
+<td align="center">Sobreescribiendo Formularios</td>
+</tr>
+<tr>
+<td>13 Junio</td>
+<td align="center">Trabajando en el Diseño</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Para datos más concretos ver Commits del <a href="https://github.com/sclaver/nuevatobe/commits/master">Proyecto</a> en GitHub .  </p>
+</blockquote>
+<hr>
+<p><div style="page-break-after: always;"></div></p>
+<h2>Bibliografía</h2>
+<p>He utilizado:</p>
+<ul>
+<li><a href="http://symfony.es/libro">Desarrollo web ágil con Symfony2</a></li>
+<li><a href="http://gitnacho.github.io/symfony-docs-es/">Symfony Esp</a> Documentación Symfony en Español</li>
+<li><a href="http://symfony.com/doc/current/index.html">Documentación Symfony</a> - Documentación Online de Symfony</li>
+<li><a href="http://stackoverflow.com">StackOverflow</a> - para resolver todo tipo de dudas, ya sea php puro, Symfony, Twig, YAML...</li>
+<li><a href="http://getbootstrap.com/css">Twitter Bootstrap</a> - La Documentación de Bootstrap online</li>
+<li><a href="http://tympanus.net/Tutorials/CircleHoverEffects/index7.html">Circle Hover Effects</a> </li>
+</ul>
+
+</body></html>
